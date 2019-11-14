@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { LandingModule } from './views/landing/landing.module';
 import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     SharedModule,
+    LandingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule
@@ -21,4 +23,4 @@ import { HttpClientModule} from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

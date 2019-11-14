@@ -1,14 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import { Router, NavigationEnd } from "@angular/router";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  title = 'sathana-school-website';
-
+  title = "dexam";
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -19,5 +18,7 @@ export class AppComponent implements OnInit {
       window.scrollTo(0, 0);
     });
   }
-
+  // onActivate(event) {
+  //   window.scroll(0, 0);
+  // }
 }
